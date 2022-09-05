@@ -59,6 +59,10 @@
 	width: 50%;
 }
 
+.field-container textarea {
+	margin-bottom: 1.2rem;
+}
+
 .field.half.left {
 	float: left;
 	width: calc(50% - 1rem);
