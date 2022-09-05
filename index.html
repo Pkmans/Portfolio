@@ -1,13 +1,3 @@
-<?php
-if ($_POST["message"]) {
-	mail(
-		"your@email.address",
-		"Here is the subject line",
-		$_POST["insert your message here"] . "From: an@email.address"
-	);
-}
-?>
-
 <!DOCTYPE HTML>
 <!--
 	Photon by HTML5 UP
@@ -21,6 +11,7 @@ if ($_POST["message"]) {
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -49,7 +40,7 @@ if ($_POST["message"]) {
 					<header class="major">
 						<h2>About Me</h2>
 					</header>
-					<p>I am a passionate developer with a focus on MERN: MongoDB, Express, React and Node. <br><br>
+					<p>I am a passionate developer with a particular interest in MERN: MongoDB, Express, React and Node. <br><br>
 						To the right is my most sophisticated project to date. </p>
 				</div>
 				<div class="col-6 col-12-medium imp-medium reveal reveal-from-right">
@@ -80,7 +71,13 @@ if ($_POST["message"]) {
 				<header class="major">
 					<h2>My Projects</h2>
 				</header>
-				<p>A showcase of other personal projects I've made.</p>
+				<p>A showcase of other personal projects I've made. <br />
+					<span style="font-size: 1rem; color: rgb(228, 228, 228)">
+						<i>
+							*Note: apps hosted on heroku, please allow 10-15 seconds for apps to load*
+						</i>
+					</span>
+				</p>
 			</div>
 
 			<div class="row gtr-150 reveal reveal-from-bottom">
@@ -130,10 +127,10 @@ if ($_POST["message"]) {
 	<!-- Three -->
 	<section id="two" class="main style1">
 		<div class="container">
-			<div class="row gtr-150">
-				<div class="col-4 col-12-medium skills-margin reveal reveal-from-left">
+			<div class="row gtr-150 skills-section">
+				<div class="col-6 col-12-medium skills-margin reveal reveal-from-left">
 					<div class="row skills-container">
-						<div class="col-4 col-12-medium">
+						<!-- <div class="col-4 col-12-medium">
 							<span class="image fit"><img class="interact skills-img" src="images/html.png" alt="" />
 								<p>HTML 5</p>
 							</span>
@@ -168,17 +165,50 @@ if ($_POST["message"]) {
 								<p>GraphQL</p>
 							</span>
 
-						</div>
+						</div> -->
+
+							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/html.png" alt="" />
+								<p>HTML 5</p>
+							</span>
+							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/nodejs.png" alt="" />
+								<p>Node</p>
+							</span>
+							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/mongodb.png" alt="" />
+								<p>MongoDB</p>
+							</span>
+
+							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/css.png" alt="" />
+								<p>CSS 3</p>
+							</span>
+							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/react.png" alt="" />
+								<p>React</p>
+							</span>
+
+							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/git.png" alt="" />
+								<p>Git</p>
+							</span>
+
+
+							<span id="skills-images" class="image fit"><img class="interact skill-img skills-img"
+									src="images/javascript.png" alt="" />
+								<p>Javascript</p>
+							</span>
+							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/graphql.png" alt="" />
+								<p>GraphQL</p>
+							</span>
+
+
+
 					</div>
 				</div>
 
-				<div class="col-6 col-12-medium reveal reveal-from-left">
+				<div class="col-6 col-12-medium reveal reveal-from-left technologies">
 					<header class="major">
 						<h2>Technologies and Tools</h2>
 					</header>
-					<p>Here are all of the technologies that I use</p>
+					<p>Here are all of the technologies that I use.
+					</p>
 
-					<p>TBD</p>
 				</div>
 			</div>
 		</div>
@@ -198,22 +228,29 @@ if ($_POST["message"]) {
 				<form method="post" data-netlify="true">
 					<div class="fields">
 
-						<div class="field-container">
-							<textarea rows="1" type="text" id="name" placeholder="Name"></textarea>
-							<textarea rows="1" type="email" name="email" placeholder="Email" required></textarea>
-							<!-- <textarea rows="1" type="text" name="_subject" placeholder="Subject" required></textarea> -->
-							<textarea name="message" id="message" rows="3" placeholder="Message..."></textarea>
+						<div id="wat" class="field-container">
+							<div class="field half left">
+								<input rows="1" type="text" id="name" placeholder="Name" required>
+							</div>
+							<div class="field half right">
+								<input rows="1" type="email" name="email" placeholder="Email" required>
+							</div>
+
+
+							<textarea name="message" id="message" rows="5" placeholder="Message..."></textarea>
 							<div data-netlify-recaptcha="true"></div>
+
+							<ul class="actions special">
+								<li>
+									<input class="button wide primary interact" type="submit" name="submit"
+										style="transition: all 0.2s ease-out; margin-top: 2rem;">
+								</li>
+							</ul>
 						</div>
 
-						<input class="button wide primary interact" type="submit" name="submit">
 					</div>
 
 				</form>
-
-				<!-- <ul class="actions special">
-					<li><a href="#" class="button wide primary interact">Send Email</a></li>
-				</ul> -->
 			</div>
 
 		</div>

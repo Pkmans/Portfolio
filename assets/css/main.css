@@ -7,10 +7,22 @@
 	background-size: auto, cover;
 }
 
+.skills-section {
+	padding: 0 10rem;
+}
 
 .skills-container img {
 	margin: auto;
-	width: 80% !important;
+	width: 90% !important;
+}
+
+#skills-images {
+	height: 128px;
+	width: 128px;
+}
+
+.skills-margin {
+	padding-left: 64x !important;
 }
 
 .image.fit p {
@@ -22,30 +34,41 @@
 	margin-bottom: 1rem !important;
 }
 
+
 .main.style2 label {
 	color: rgba(255, 255, 255, 0.75);
 }
 
-.main.style2 textarea {
+.main.style2 textarea,
+.main.style2 input {
 	border-radius: 4px;
 	border-color: rgba(255, 255, 255, 0.6);
 	background-color: rgba(255, 255, 255, 0.1);
+	resize: vertical;
+}
+
+.main.style2 input::placeholder,
+.main.style2 textarea::placeholder {
+	color: rgb(197, 197, 197) !important;
 }
 
 /* Contact Form */
 
 .field-container {
 	margin: auto;
-	width: 70%;
+	width: 50%;
 }
 
-/* .half-input {
-	display: inline-block;
+.field.half.left {
 	float: left;
-	width: 45%;
-	margin: 0 2rem 2rem 0;
-	resize: none;
-} */
+	width: calc(50% - 1rem);
+	margin-bottom: 2rem;
+}
+
+.field.half.right {
+	float: right;
+	width: calc(50% - 1rem);
+}
 
 
 
@@ -688,6 +711,11 @@ pre code {
 
 @media screen and (max-width: 1680px) {
 
+	#skills-images {
+		height: 120px;
+		width: 120px;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -931,7 +959,24 @@ pre code {
 
 }
 
+@media screen and (max-width: 1153px) {
+
+	.skills-section {
+		padding: 0 5rem;
+	}
+}
+
 @media screen and (max-width: 1140px) {
+
+
+	#skills-images {
+		height: 120px;
+		width: 120px;
+	}
+
+	.skills-section {
+		padding: 0 5rem;
+	}
 
 	.row {
 		display: flex;
@@ -1178,6 +1223,36 @@ pre code {
 
 @media screen and (max-width: 980px) {
 
+
+	#skills-images {
+		height: 110px;
+		width: 110px;
+	}
+
+	.skills-section {
+		padding: 0 6rem;
+	}
+
+	.row.gtr-150.skills-section .technologies {
+		padding-left: 0;
+	}
+
+	.field-container {
+		width: 80%;
+	}
+
+	.field.half.left {
+		float: none;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.field.half.right {
+		float: none;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -1310,7 +1385,8 @@ pre code {
 	}
 
 	.row>.col-12-medium {
-		width: 100%;
+		width: 85%;
+		margin: auto;
 	}
 
 	.row>.off-12-medium {
@@ -1422,6 +1498,15 @@ pre code {
 }
 
 @media screen and (max-width: 736px) {
+
+	#skills-images {
+		height: 96px;
+		width: 96px;
+	}
+
+	.skills-section {
+		padding: 0 4rem;
+	}
 
 	.row {
 		display: flex;
@@ -1666,7 +1751,22 @@ pre code {
 
 }
 
+@media screen and (max-width: 580px) {
+	.skills-section {
+		padding: 0 1rem;
+	}
+}
+
 @media screen and (max-width: 480px) {
+
+	.skills-section {
+		padding: 0 0rem;
+	}
+
+	#skills-images {
+		height: 80px;
+		width: 80px;
+	}
 
 	.row {
 		display: flex;
@@ -1912,6 +2012,12 @@ pre code {
 }
 
 @media screen and (max-width: 320px) {
+	#skills-images {
+		height: 64px;
+		width: 64px;
+	}
+
+
 
 	.row {
 		display: flex;
@@ -2706,7 +2812,7 @@ ul.actions.fit.stacked {
 	ul.actions:not(.fixed) li input[type="button"],
 	ul.actions:not(.fixed) li button,
 	ul.actions:not(.fixed) li .button {
-		width: 100%;
+		width: 50%;
 	}
 
 	ul.actions:not(.fixed) li input[type="submit"].icon:before,
@@ -2982,7 +3088,7 @@ button:disabled,
 }
 
 .main.style1 {
-	background: #fff;
+	background-image: url("https://www.transparenttextures.com/patterns/graphcoders-lil-fiber.png");
 }
 
 .main.style2 {
@@ -3408,10 +3514,6 @@ body.is-preload #header:after {
 	padding: 0;
 }
 
-.skills-margin {
-	margin-left: 200px;
-}
-
 /* XLarge */
 
 @media screen and (max-width: 1680px) {
@@ -3431,9 +3533,7 @@ body.is-preload #header:after {
 		padding: 6em 0 6em 0;
 	}
 
-	.skills-margin {
-		margin-left: 180px;
-	}
+
 
 }
 
@@ -3499,9 +3599,7 @@ body.is-preload #header:after {
 		background-attachment: scroll;
 	}
 
-	.skills-margin {
-		margin-left: 150px;
-	}
+
 
 }
 
@@ -3551,13 +3649,6 @@ body.is-preload #header:after {
 		text-align: center;
 	}
 
-	.skills-margin {
-		margin-left: 0px;
-	}
-
-	.skills-container img {
-		width: 10% !important;
-	}
 
 
 }
