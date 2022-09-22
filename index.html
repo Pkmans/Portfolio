@@ -15,109 +15,124 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body class="is-preload">
-
 	<!-- Header -->
 	<section id="header">
 		<div class="inner">
-			<span class="icon solid major fa-cloud"></span>
+			<!-- Navbar -->
+			<div class="navbar">
+				<a href="#about" class="scrolly">About</a>
+				<a href="#projects" class="scrolly">Projects</a>
+				<a href="#technologies" class="scrolly">Technologies</a>
+				<a href="#contact" class="scrolly">Contact</a>
+			</div>
+			<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xafe7wbh.json" background="transparent"
+				speed="1" style="width: 150px; height: 150px;" loop autoplay class="horizontal-center">
+			</lottie-player>
 			<h1>Hi, I'm <strong>Aaron Lam</strong><br />
 				a fullstack web developer.</h1>
 			<p>A showcase of my projects and abilities.</p>
 			<ul class="actions special">
-				<li><a href="#one" class="button scrolly interact">Discover</a></li>
+				<li><a href="#about" class="button scrolly interact">Discover</a></li>
 			</ul>
 		</div>
 	</section>
 
 	<!-- One -->
-	<section id="one" class="main style1">
+	<section id="about" class="main style1">
 		<div class="container">
-			<div class="row gtr-150">
+			<div class="row">
 				<div class="col-6 col-12-medium reveal reveal-from-left">
 					<header class="major">
-						<h2>About Me</h2>
+						<h2><strong>Aaron Lam</strong></h2>
 					</header>
-					<p>I am a passionate developer with a particular interest in MERN: MongoDB, Express, React and Node. <br><br>
-						To the right is my most sophisticated project to date. </p>
+					<p>I am a passionate developer who wants to innovate and bring great ideas to life
+						with amazing people. I'm always looking to learn new skills and improve.
+						<br><br>
+					</p>
 				</div>
 				<div class="col-6 col-12-medium imp-medium reveal reveal-from-right">
-					<h3 style="text-align: center">Main Project</h3>
-
-					<span class="image fit">
-						<a href="https://aaronlam2k-tweeter.herokuapp.com/" target="_blank">
-							<img class="interact interact-zoom-image" src="images/Tweeter.png" />
-						</a>
-					</span>
-					<p style="text-align: center"><i>Tweeter - a social media app</i></p>
-					<ul class="actions special">
-						<li><a href="https://aaronlam2k-tweeter.herokuapp.com/" class="primary button interact"
-								target="_blank">Demo</a></li>
-						<li><a href="https://github.com/Pkmans/Tweeter" class="button interact"
-								target="_blank">Github</a></li>
-
-					</ul>
+					<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_iorpbol0.json" background="transparent"
+						speed="1" loop autoplay class="horizontal-center about-me-loitte">
+					</lottie-player>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Two -->
-	<section id="three" class="main style2 special">
+	<section id="projects" class="main style2 special">
 		<div class="container">
 			<div class="reveal reveal-from-top">
 				<header class="major">
 					<h2>My Projects</h2>
 				</header>
-				<p>A showcase of other personal projects I've made. <br />
+				<p>A showcase of personal projects I've made. <br />
 					<span style="font-size: 1rem; color: rgb(228, 228, 228)">
 						<i>
-							*Note: apps hosted on heroku, please allow 10-15 seconds for apps to load*
+							*Note: Some apps hosted on heroku, please allow 10-15 seconds for apps to load*
 						</i>
 					</span>
 				</p>
 			</div>
 
 			<div class="row gtr-150 reveal reveal-from-bottom">
+
 				<div class="col-4 col-12-medium">
 					<span class="image fit">
-						<a href="https://aaronlam2k-notes-app.herokuapp.com" target="_blank">
-							<img class="interact interact-zoom-image" src="images/Keeper.png" alt="" />
+						<a href="https://volex-gaming.vercel.app/" target="_blank">
+							<img class="interact interact-zoom-image" src="images/volex.png" alt="" />
 						</a>
 					</span>
-					<h3>Keeper App</h3>
-					<p>A note keeping app with the ability to drag notes around.</p>
+					<div class="project-title">
+						<h3>Gaming E-commerce Shop</h3>
+					</div>
+					<p>Collection of gaming equipment with Stripe integration for payment.</p>
 					<ul class="actions special">
-						<li><a href="https://aaronlam2k-notes-app.herokuapp.com" class="primary button interact"
+						<li><a href="https://volex-gaming.vercel.app/" class="primary button interact"
 								target="_blank">Demo</a></li>
-						<li><a href="https://github.com/Pkmans/Notes-App" class="button interact"
-								target="_blank">Github</a></li>
+						<li><a href="https://github.com/Pkmans/Volex-Gaming" class="button interact"
+								target="_blank">Github</a>
+						</li>
 
 					</ul>
 				</div>
-				<div class="col-4 col-12-medium">
-					<span class="image fit"><img class="interact interact-zoom-image" src="images/pic04.jpg"
-							alt="" /></span>
-					<h3>Todo App</h3>
-					<p>Keep track of a list of things you need Todo.</p>
-					<ul class="actions special">
-						<li><a href="https://aaronlam2k-todo-app.herokuapp.com/" class="primary button interact"
-								target="_blank">Demo</a></li>
-						<li><a href="https://github.com/Pkmans/Tweeter" class="button interact"
-								target="_blank">Github</a></li>
 
-					</ul>
-				</div>
 				<div class="col-4 col-12-medium">
-					<span class="image fit"><img class="interact interact-zoom-image" src="images/pic04.jpg"
-							alt="" /></span>
-					<h3>TBD</h3>
-					<p>A mock social media app created using MERN, GraphQL and integration to AWS S3</p>
+					<span class="image fit">
+						<a href="https://aaronlam2k-tweeter.herokuapp.com/" target="_blank">
+							<img class="interact interact-zoom-image" src="images/Tweeter.png" />
+						</a>
+					</span>
+					<div class="project-title">
+						<h3>Tweeter - Social Media</h3>
+					</div>
+					<p>Login to create posts, comments and customize your profile. Features dark mode.</p>
 					<ul class="actions special">
 						<li><a href="#" class="primary button interact">Demo</a></li>
 						<li><a href="#" class="button interact">Github</a></li>
+					</ul>
+				</div>
+
+				<div class="col-4 col-12-medium">
+					<span class="image fit">
+						<a href="https://aaronlam2k-notes-app.herokuapp.com" target="_blank">
+							<img class="interact interact-zoom-image" src="images/Notes.png" alt="" />
+						</a>
+					</span>
+					<div class="project-title">
+						<h3>Notes App</h3>
+					</div>
+					<p>Great for jotting down ideas on the fly. Includes the ability to drag notes around.</p>
+					<ul class="actions special">
+						<li><a href="https://aaronlam2k-notes-app.herokuapp.com" class="primary button interact"
+								target="_blank">Demo</a></li>
+						<li><a href="https://github.com/Pkmans/Notes-App" class="button interact" target="_blank">Github</a>
+						</li>
+
 					</ul>
 				</div>
 			</div>
@@ -125,103 +140,84 @@
 	</section>
 
 	<!-- Three -->
-	<section id="two" class="main style1">
-		<div class="container">
-			<div class="row gtr-150 skills-section">
-				<div class="col-6 col-12-medium skills-margin reveal reveal-from-left">
-					<div class="row skills-container">
-						<!-- <div class="col-4 col-12-medium">
-							<span class="image fit"><img class="interact skills-img" src="images/html.png" alt="" />
-								<p>HTML 5</p>
-							</span>
-							<span class="image fit"><img class="interact skills-img" src="images/nodejs.png" alt="" />
-								<p>Node</p>
-							</span>
-							<span class="image fit"><img class="interact skills-img" src="images/mongodb.png" alt="" />
-								<p>MongoDB</p>
-							</span>
-						</div>
+	<section id="technologies" class="main style1 special">
+		<div id='skills' class="container">
+			<div class="skills-section">
 
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img class="interact skills-img" src="images/css.png" alt="" />
-								<p>CSS 3</p>
-							</span>
-							<span class="image fit"><img class="interact skills-img" src="images/react.png" alt="" />
-								<p>React</p>
-							</span>
-
-							<span class="image fit"><img class="interact skills-img" src="images/git.png" alt="" />
-								<p>Git</p>
-							</span>
-
-						</div>
-
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img class="interact skill-img skills-img"
-									src="images/javascript.png" alt="" />
-								<p>Javascript</p>
-							</span>
-							<span class="image fit"><img class="interact skills-img" src="images/graphql.png" alt="" />
-								<p>GraphQL</p>
-							</span>
-
-						</div> -->
-
-							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/html.png" alt="" />
-								<p>HTML 5</p>
-							</span>
-							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/nodejs.png" alt="" />
-								<p>Node</p>
-							</span>
-							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/mongodb.png" alt="" />
-								<p>MongoDB</p>
-							</span>
-
-							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/css.png" alt="" />
-								<p>CSS 3</p>
-							</span>
-							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/react.png" alt="" />
-								<p>React</p>
-							</span>
-
-							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/git.png" alt="" />
-								<p>Git</p>
-							</span>
-
-
-							<span id="skills-images" class="image fit"><img class="interact skill-img skills-img"
-									src="images/javascript.png" alt="" />
-								<p>Javascript</p>
-							</span>
-							<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/graphql.png" alt="" />
-								<p>GraphQL</p>
-							</span>
-
-
-
-					</div>
-				</div>
 
 				<div class="col-6 col-12-medium reveal reveal-from-left technologies">
 					<header class="major">
 						<h2>Technologies and Tools</h2>
 					</header>
-					<p>Here are all of the technologies that I use.
-					</p>
+				</div>
 
+				<!-- Skill Images -->
+				<div class="col-6 col-12-medium reveal reveal-from-left">
+					<div class="skills-container">
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/html.png"
+								alt="" />
+							<p>HTML 5</p>
+						</span>
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/css.png"
+								alt="" />
+							<p>CSS 3</p>
+						</span>
+						<span id="skills-images" class="image fit"><img class="interact skill-img skills-img"
+								src="images/javascript.png" alt="" />
+							<p>Javascript</p>
+						</span>
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/nodejs.png"
+								alt="" />
+							<p>Node</p>
+						</span>
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/mongodb.png"
+								alt="" />
+							<p>MongoDB</p>
+						</span>
+
+
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/react.png"
+								alt="" />
+							<p>React</p>
+						</span>
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/next.png"
+								alt="" />
+							<p>NextJs</p>
+						</span>
+
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/graphql.png"
+								alt="" />
+							<p>GraphQL</p>
+						</span>
+
+						<!-- todo -->
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/sanity.png"
+								alt="" />
+							<p>Sanity</p>
+						</span>
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/stripe.png"
+								alt="" />
+							<p>Stripe</p>
+						</span>
+						<span id="skills-images" class="image fit"><img class="interact skills-img" src="images/git.png"
+								alt="" />
+							<p>Git</p>
+						</span>
+
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Four -->
-	<section id="four" class="main style2 special">
+	<section id="contact" class="main style2 special">
 		<div class="container">
 			<div class="reveal reveal-from-top">
 				<header class="major">
 					<h2>Have any questions?</h2>
 				</header>
-				<p>Feel free to send me an email for any business inquiries!</p>
+				<p>Feel free to send me a message for any business inquiries!</p>
 			</div>
 
 			<div class="reveal reveal-from-bottom">
@@ -249,15 +245,19 @@
 						</div>
 
 					</div>
-
 				</form>
+
+				I can also be emailed
+				<a href="mailto:aaronlam2k@gmail.com" target='_blank' style='color: rgb(120, 205, 211)'>
+					directly
+				</a>
 			</div>
 
 		</div>
 	</section>
 
 	<!-- Footer -->
-	<section id="footer">
+	<section id="footer" class="main style1 special">
 		<ul class="icons">
 			<li class="interact skills-img"><a href="https://www.linkedin.com/in/aaron-lam-b0399a140"
 					class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>

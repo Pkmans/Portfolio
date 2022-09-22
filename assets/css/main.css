@@ -1,39 +1,77 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
-/* Aaron's Custom CSS */
-.main.style1 {
-	background: rgb(240, 248, 246);
-	background-size: auto, cover;
+/* -------- Aaron's Custom CSS -------- */
+
+/* Navbar */
+
+/* Navbar links */
+.navbar {
+	padding: 0rem 0 3rem;
 }
 
-.skills-section {
-	padding: 0 10rem;
+.navbar a {
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 17px;
+	margin-right: 1rem;
 }
 
-.skills-container img {
-	margin: auto;
-	width: 90% !important;
+
+/* About Me Section */
+.about-me-loitte {
+	width: 400px;
+	height: 400px;
+}
+
+/* Skills Section */
+
+#skills.container {
+	width: 45rem;
+}
+
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.2rem;
 }
 
 #skills-images {
-	height: 128px;
-	width: 128px;
-}
-
-.skills-margin {
-	padding-left: 64x !important;
+	height: 100px;
+	width: 100px;
 }
 
 .image.fit p {
 	text-align: center;
+}
+
+.project-title {
+	position: relative;
 	margin-bottom: 1rem;
 }
 
-.image.fit {
-	margin-bottom: 1rem !important;
+.project-title h3 {
+	margin-bottom: -1rem;
+	font-weight: 500;
 }
 
+.project-title::after {
+	background: rgba(255, 255, 255, 0.3);
+	content: "";
+	display: inline-block;
+	height: 1px;
+	margin-top: 1.5em;
+	width: 10em;
+}
+
+
+/* Main Styles */
+
+.main.style1 {
+	background: rgb(240, 248, 246);
+	background-size: auto, cover;
+}
 
 .main.style2 label {
 	color: rgba(255, 255, 255, 0.75);
@@ -74,7 +112,19 @@
 	width: calc(50% - 1rem);
 }
 
+/* Center Images */
 
+.vertical-center {
+	transform: translateY(-50%) !important;
+	position: relative !important;
+	top: 50% !important;
+}
+
+.horizontal-center {
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
 
 /*
 	Photon by HTML5 UP
@@ -664,11 +714,11 @@ pre code {
 
 .row {
 	margin-top: 0;
-	margin-left: -2em;
+	/* margin-left: -2em; */
 }
 
 .row>* {
-	padding: 0 0 0 2em;
+	/* padding: 0 0 0 2em; */
 }
 
 .row.gtr-uniform {
@@ -714,11 +764,6 @@ pre code {
 }
 
 @media screen and (max-width: 1680px) {
-
-	#skills-images {
-		height: 120px;
-		width: 120px;
-	}
 
 	.row {
 		display: flex;
@@ -912,11 +957,11 @@ pre code {
 
 	.row {
 		margin-top: 0;
-		margin-left: -2em;
+		/* margin-left: -2em; */
 	}
 
 	.row>* {
-		padding: 0 0 0 2em;
+		/* padding: 0 0 0 2em; */
 	}
 
 	.row.gtr-uniform {
@@ -963,24 +1008,8 @@ pre code {
 
 }
 
-@media screen and (max-width: 1153px) {
-
-	.skills-section {
-		padding: 0 5rem;
-	}
-}
-
 @media screen and (max-width: 1140px) {
 
-
-	#skills-images {
-		height: 120px;
-		width: 120px;
-	}
-
-	.skills-section {
-		padding: 0 5rem;
-	}
 
 	.row {
 		display: flex;
@@ -1174,11 +1203,11 @@ pre code {
 
 	.row {
 		margin-top: 0;
-		margin-left: -2em;
+		/* margin-left: -2em; */
 	}
 
 	.row>* {
-		padding: 0 0 0 2em;
+		/* padding: 0 0 0 2em; */
 	}
 
 	.row.gtr-uniform {
@@ -1229,13 +1258,10 @@ pre code {
 
 
 	#skills-images {
-		height: 110px;
-		width: 110px;
+		height: 80px;
+		width: 80px;
 	}
 
-	.skills-section {
-		padding: 0 6rem;
-	}
 
 	.row.gtr-150.skills-section .technologies {
 		padding-left: 0;
@@ -1297,7 +1323,7 @@ pre code {
 	}
 
 	.row>.imp-medium {
-		order: -1;
+		/* order: -1; */
 	}
 
 	.row>.col-1-medium {
@@ -1450,11 +1476,11 @@ pre code {
 
 	.row {
 		margin-top: 0;
-		margin-left: -2em;
+		/* margin-left: -2em; */
 	}
 
 	.row>* {
-		padding: 0 0 0 2em;
+		/* padding: 0 0 0 2em; */
 	}
 
 	.row.gtr-uniform {
@@ -1504,12 +1530,8 @@ pre code {
 @media screen and (max-width: 736px) {
 
 	#skills-images {
-		height: 96px;
-		width: 96px;
-	}
-
-	.skills-section {
-		padding: 0 4rem;
+		height: 70px;
+		width: 70px;
 	}
 
 	.row {
@@ -1704,11 +1726,11 @@ pre code {
 
 	.row {
 		margin-top: 0;
-		margin-left: -2em;
+		/* margin-left: -2em; */
 	}
 
 	.row>* {
-		padding: 0 0 0 2em;
+		/* padding: 0 0 0 2em; */
 	}
 
 	.row.gtr-uniform {
@@ -1755,21 +1777,12 @@ pre code {
 
 }
 
-@media screen and (max-width: 580px) {
-	.skills-section {
-		padding: 0 1rem;
-	}
-}
 
 @media screen and (max-width: 480px) {
 
-	.skills-section {
-		padding: 0 0rem;
-	}
-
 	#skills-images {
-		height: 80px;
-		width: 80px;
+		height: 50px;
+		width: 50px;
 	}
 
 	.row {
@@ -1964,11 +1977,11 @@ pre code {
 
 	.row {
 		margin-top: 0;
-		margin-left: -2em;
+		/* margin-left: -2em; */
 	}
 
 	.row>* {
-		padding: 0 0 0 2em;
+		/* padding: 0 0 0 2em; */
 	}
 
 	.row.gtr-uniform {
@@ -2017,11 +2030,9 @@ pre code {
 
 @media screen and (max-width: 320px) {
 	#skills-images {
-		height: 64px;
-		width: 64px;
+		height: 40px;
+		width: 40px;
 	}
-
-
 
 	.row {
 		display: flex;
@@ -2215,11 +2226,11 @@ pre code {
 
 	.row {
 		margin-top: 0;
-		margin-left: -2em;
+		/* margin-left: -2em; */
 	}
 
 	.row>* {
-		padding: 0 0 0 2em;
+		/* padding: 0 0 0 2em; */
 	}
 
 	.row.gtr-uniform {
@@ -3192,14 +3203,27 @@ button:disabled,
 
 /* Header */
 
-#header {
-	padding: 9em 0 9em 0;
+/* #header {
+	padding: 5em 0 5em 0;
 	background-color: #4686a0;
 	color: rgba(255, 255, 255, 0.75);
 	background-attachment: fixed, fixed, fixed;
 	background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #6bc6b2 5%, #4fa49a 30%, #4361c2);
 	background-position: top left, center center, center center;
 	background-size: auto, cover, cover;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+} */
+
+#header {
+	padding: 2em 0 6em;
+	background-color: #4686a0;
+	color: rgba(255, 255, 255, 0.75);
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(7, 58, 51, 0.4), rgba(7, 39, 35, 0.4)), url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+	background-position: center bottom;
+	background-size: cover;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -3396,11 +3420,11 @@ body.is-preload #header:after {
 /* Footer */
 
 #footer {
-	padding: 6em 0 6em 0;
-	background-color: #4686a0;
-	color: rgba(255, 255, 255, 0.75);
+	padding: 2em 0;
+	background-color: white;
+	color: rgba(255, 255, 255, 0.753);
 	background-attachment: fixed, fixed, fixed;
-	background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #6bc6b2 50%, #9dc66b 95%);
+	background-image: linear-gradient(rgba(7, 58, 51, 0.6), rgba(7, 39, 35, 0.6)), url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
 	background-position: top left, center center, center center;
 	background-size: auto, cover, cover;
 	text-align: center;
@@ -3499,8 +3523,9 @@ body.is-preload #header:after {
 
 #footer .copyright {
 	font-size: 0.8em;
+	font-weight: 500;
 	list-style: none;
-	margin: 2em 0 0 0;
+	margin: 0.5em 0 0 0;
 	padding: 0;
 }
 
@@ -3534,7 +3559,7 @@ body.is-preload #header:after {
 	/* Header */
 
 	#header {
-		padding: 6em 0 6em 0;
+		padding: 3em 0 6em 0;
 	}
 
 
@@ -3588,7 +3613,7 @@ body.is-preload #header:after {
 	/* Header */
 
 	#header {
-		padding: 5em 0 5em 0;
+		padding: 3em 0 5em 0;
 		background-attachment: scroll;
 	}
 
@@ -3611,6 +3636,11 @@ body.is-preload #header:after {
 
 @media screen and (max-width: 980px) {
 
+	#header,
+	#footer {
+		background-position: scroll;
+	}
+
 	/* List */
 
 	ul.major-icons li {
@@ -3632,7 +3662,7 @@ body.is-preload #header:after {
 	/* Header */
 
 	#header {
-		padding: 8em 3em 8em 3em;
+		padding: 3em;
 	}
 
 	/* Footer */
@@ -3643,13 +3673,13 @@ body.is-preload #header:after {
 
 	/* One */
 
-	#one {
+	#about {
 		text-align: center;
 	}
 
 	/* Two */
 
-	#two {
+	#technologies {
 		text-align: center;
 	}
 
@@ -3672,6 +3702,10 @@ body.is-preload #header:after {
 
 	h1 {
 		font-size: 1.75em;
+	}
+
+	.navbar a {
+		font-size: 0.75rem;
 	}
 
 	h2 {
@@ -3722,13 +3756,17 @@ body.is-preload #header:after {
 	/* Main */
 
 	.main {
-		padding: 3em 1.5em 1em 1.5em;
+		padding: 3em 1.5em 2em;
 	}
 
 	/* Header */
 
 	#header {
-		padding: 4em 3em 4em 3em;
+		padding: 3em;
+	}
+
+	.navbar {
+		padding-bottom: 1.5rem;
 	}
 
 	#header .actions {
@@ -3747,6 +3785,13 @@ body.is-preload #header:after {
 
 @media screen and (max-width: 480px) {
 
+	/* About me Loitte Animation */
+	.about-me-loitte {
+
+		width: 100%;
+		height: 100%;
+	}
+
 	/* Button */
 
 	input[type="submit"],
@@ -3759,13 +3804,13 @@ body.is-preload #header:after {
 	/* Main */
 
 	.main {
-		padding: 2em 1.5em 0.1em 1.5em;
+		padding: 2em 1.5em 1em;
 	}
 
 	/* Header */
 
 	#header {
-		padding: 4em 2em 4em 2em;
+		padding: 3em 2em 4em 2em;
 	}
 
 	#header br {
