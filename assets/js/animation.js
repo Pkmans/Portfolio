@@ -1,3 +1,5 @@
+
+
 // Slide left-to-right
 function revealFromLeft() {
     var reveals = document.querySelectorAll(".reveal-from-left");
@@ -7,8 +9,6 @@ function revealFromLeft() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
-        } else {
-            reveals[i].classList.remove("active");
         }
     }
 }
@@ -24,8 +24,6 @@ function revealFromRight() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
-        } else {
-            reveals[i].classList.remove("active");
         }
     }
 }
@@ -41,8 +39,6 @@ function revealFromTop() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
-        } else {
-            reveals[i].classList.remove("active");
         }
     }
 }
@@ -58,8 +54,6 @@ function revealFromBottom() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
-        } else {
-            reveals[i].classList.remove("active");
         }
     }
 }
