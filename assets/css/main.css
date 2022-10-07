@@ -69,7 +69,7 @@
 /* Main Styles */
 
 .main.style1 {
-	background: rgb(240, 248, 246);
+	background: rgb(238, 250, 246);
 	background-size: auto, cover;
 }
 
@@ -3112,6 +3112,7 @@ button:disabled,
 	background-attachment: fixed, fixed;
 	background-image: url("images/overlay1.png"), url("../../images/header.jpg");
 	background-size: auto, cover;
+	background-position: 50% 80%;
 }
 
 .main.style2 a {
